@@ -3,7 +3,7 @@
 **[📈 Click here to view the interactive Tableau Dashboard](https://public.tableau.com/views/FBSalesProfitabilityDashboard/RestaurantSalesOperationsAnalytics?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 ## Overview
-An end-to-end business analytics portfolio project exploring restaurant sales, profitability, customer demand, and operational trends. Using a synthetic dataset of approximately 100,000 F&B transactions across four locations over six months, this project demonstrates a complete data analytics workflow: extracting insights with SQL and visualizing operational KPIs in Tableau.
+An end-to-end business analytics portfolio project exploring restaurant sales, profitability, customer demand, and operational trends. Using a dataset of over 100,000 F&B transactions across four locations over six months, this project demonstrates a complete data analytics workflow: cleaning and transforming raw data with Python, querying metrics with SQL, and visualizing operational KPIs in Tableau.
 
 ## Business Questions Answered
 - Which products and categories generate the most revenue vs. the strongest profit margins?
@@ -12,9 +12,10 @@ An end-to-end business analytics portfolio project exploring restaurant sales, p
 - How do promotional discounts impact bottom-line profitability?
 
 ## Tools & Tech Stack
-- **SQL**: Data aggregation, filtering, and exploratory analysis.
-- **Tableau Public**: Interactive BI dashboard design and data storytelling.
-- **GitHub**: Version control and project documentation.
+- **Python (Pandas):** Automated data extraction, cleaning, duplicate removal, and feature engineering (profit margins & tier segmentation).
+- **SQL:** Data aggregation, filtering, and exploratory queries.
+- **Tableau Public:** Interactive BI dashboard design and data storytelling.
+- **GitHub:** Version control, code documentation, and portfolio hosting.
 
 ## Key Findings
 - **Weekend Dependency:** Friday through Sunday accounted for approximately 53% of total revenue.
@@ -29,7 +30,9 @@ An end-to-end business analytics portfolio project exploring restaurant sales, p
 4. **Discount Auditing:** Re-evaluate promotional strategies to ensure discounts actively drive net profitability rather than just top-line volume.
 
 ## Project Files
-- `restaurant_sales.csv` — Synthetic transaction dataset (~100k rows)
+- `restaurant_sales.csv` — Raw transaction dataset (~100k rows)
+- `restaurant_sales_analyzed.csv` — Cleaned, feature-engineered dataset with profit tiers (~96k rows)
+- `data_processing.py` / `data_processing.ipynb` — Python ETL script and notebook used for data cleaning and transformation
 - `analysis_queries.sql` — SQL scripts used for underlying metric calculations
 - `restaurant_sales_workbook.twbx` — Downloadable Tableau packaged workbook
 
